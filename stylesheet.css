@@ -1,0 +1,133 @@
+
+html {
+    font-family: 'Pontano Sans', sans-serif;
+    position: relative;
+    min-height: 100%;
+}
+
+body{
+    background-color: #000000;  
+    margin: 0 0 100px;
+}
+
+#logo{
+       transition:width 2s, height 2s, transform 2s;
+-webkit-transition:width 2s, height 2s, -webkit-transform 2s;  
+    padding: 10px;
+}
+
+#logo:hover{
+   -ms-transform: rotate(360deg); /* IE 9 */
+    -webkit-transform: rotate(360deg); /* Chrome, Safari, Opera */
+    transform: rotate(360deg); /* Standard syntax */
+}
+
+.bar{
+   
+    text-align: center;
+    color:#ffffff;
+}
+
+.bar h1{
+    
+     font-weight: bold;
+    text-align: center; 
+    margin-left: 10px;
+    margin-right: auto;
+}
+.bar li{
+ display:inline;  
+        text-decoration: none;
+    color: #ffffff;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-right: 15px;
+}
+.bar a{
+ color:#ffffff;
+    text-decoration: none;
+}
+.bar a:visited{
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.bigidea {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.nav a{
+
+}
+
+
+.bigidea {
+     background-image: url(station.jpg); 
+    background-size: cover;
+    background-position: bottom, center;
+    width: 100%;
+    padding: 10px;
+}
+
+.maincontent p{
+    margin-top: 20px;
+    margin-bottom: auto;
+    text-align: center;
+ color: #ffffff; 
+}
+
+.footer p{
+    color: #ffffff;
+    display: inline;
+
+    
+}
+
+.footer a{
+    padding-top: 15px;
+    text-align: center;
+    color: #ffffff;
+    text-decoration: none;
+     padding-left: 10px;
+    padding-right: 10px;
+    opacity: .5;
+     transition: opacity .5s ease-out;
+    -moz-transition: opacity .5s ease-out;
+    -webkit-transition: opacity .5s ease-out;
+    -o-transition: opacity .5s ease-out;
+    
+  
+}
+ 
+
+.footer a:visited{
+    text-decoration: none;   
+}
+
+.footer a:hover{
+    opacity: 1;
+    
+}
+
+.footer {
+  
+    text-align: center;
+   position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 50px;
+    width: 100%;
+    
+}
+/*
+.footer #twitter{
+    background-image: url();
+}
+.footer #mail{
+    background-image: url();   
+}
+.footer #github{
+    background-image: url();   
+}*/
