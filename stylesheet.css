@@ -2,19 +2,44 @@
 margin: 0;
 }
 
+*::selection{
+  color: #dddddd;
+}
+
+html{
+  height: 100%;
+}
+
+.container{
+  max-width: 800px;
+  margin: auto;
+}
+
 body{
-  font-family: 'Pontano Sans', sans-serif;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 100;
 }
 
 .welcome{
   text-align: center;
-  background-image: url("map.jpg");
-  height: 200px;
+  background-image: url("blur.jpg");
+  background-size: cover;
+  height: 500px;
 }
 
 .welcome h1{
   color: #fff;
-  padding: 30px;
+  font-family: 'Roboto', sans-serif;
+  padding-top: 30px;
+  text-shadow: 1px 1px 1.5px #111111;
+}
+
+.welcome h2{
+  color: #fff;
+  text-shadow: 1px 1px 1.5px #111111;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 100;
+  padding-bottom: 30px;
 }
 
 .welcome li{
@@ -30,9 +55,14 @@ body{
 .nav li{
   display: inline;
   color: #ffffff;
+  text-shadow: 1px 1px 1.5px #111111;
   padding-left: 10px;
   padding-right: 10px;
   margin-top: 50px;
+}
+
+.nav li:hover{
+  text-decoration: underline;
 }
 
 .nav a{
@@ -46,12 +76,14 @@ body{
 
 .main-idea{
   margin: 30px;
+}
+
+.main-idea p{
   text-align: center;
-  max-width: 800px;
 }
 
 
-footer a{
+.footer a{
   padding-top: 15px;
   color: #39cccc;
   text-decoration: none;
@@ -65,23 +97,19 @@ footer a{
 }
 
 
-footer a:visited{
+.footer a:visited{
   text-decoration: none;
 }
 
-footer a:hover{
+.footer a:hover{
   opacity: 1;
 
 }
 
-footer {
-  text-align:center;
-  color: #ffffff;
-  display:inline;
-  position: absolute;
-  left: 0;
+.footer{
   bottom: 0;
+  text-align: center;
+  left: 0;
   height: 50px;
-  width: 100%;
 
 }
