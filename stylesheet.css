@@ -19,6 +19,27 @@ body{
   background-color: #000;
 
 }
+/*
+.headroom{
+  text-align: center;
+  color: #fff;
+  margin: auto;
+  background-color: #000;
+  height: 50px;
+}
+
+.headroom i{
+  margin-top: 14px;
+}
+
+.headroom--unpinned{
+  top: -100;
+}
+
+.headroom--pinned{
+  top:0;
+}
+*/
 
 .container{
   max-width: 800px;
@@ -26,23 +47,15 @@ body{
 }
 
 .welcome{
+  padding-top: 30px;
   text-align: center;
   background-size: cover;
-  height: 425px;
-  max-height: 425px;
-
-  background: -webkit-linear-gradient(90deg, #00d2ff 10%, #3a7bd5 90%); /* Chrome 10+, Saf5.1+ */
-  background:    -moz-linear-gradient(90deg, #00d2ff 10%, #3a7bd5 90%); /* FF3.6+ */
-  background:     -ms-linear-gradient(90deg, #00d2ff 10%, #3a7bd5 90%); /* IE10 */
-  background:      -o-linear-gradient(90deg, #00d2ff 10%, #3a7bd5 90%); /* Opera 11.10+ */
-  background:         linear-gradient(90deg, #00d2ff 10%, #3a7bd5 90%); /* W3C */
-
-
 }
 
 .welcome h1{
   color: #fff;
   font-family: 'Open Sans', sans-serif;
+  font-weight: 700;
   padding-top: 30px;
   /*text-shadow: 1px 1px 1.5px #111111;*/
 }
@@ -79,7 +92,7 @@ body{
 
 .nav li{
   display: inline;
-  color: #ffffff;
+  color: #000;
   /*text-shadow: 1px 1px 1.5px #111111;*/
   padding-left: 10px;
   padding-right: 10px;
@@ -90,7 +103,7 @@ body{
 }
 
 .nav a{
-  color: #fff;
+  color: #000;
   text-decoration: none;
   font-weight: 300;
 }
@@ -100,23 +113,25 @@ body{
 }
 
 .main-idea p{
-  text-align: center;
+  margin: 15px;
   size: 400px;
   color: #fff;
-  margin-top: 5px;
 }
 
-#fl{
-  margin-top:40px;
+.main-idea h2{
+  color: #fff;
+}
+
+#blogtext{
+  text-align: center;
 }
 
 .button{
+  margin: auto;
   height: 45px;
   width: 120px;
   border: 2px solid rgba(255, 255, 255, 1);
   color: #fff;
-  align: center;
-  margin: auto;
   margin-top: 15px;
   -webkit-transition: background-color 300ms linear;
   -moz-transition: background-color 300ms linear;
@@ -128,6 +143,10 @@ body{
 .button i{
   align: center;
   margin-top: 12.5px;
+}
+
+.button a{
+  text-align: center;
 }
 
 .button:hover{
@@ -147,4 +166,13 @@ body{
 .other-links, a{
   padding: 8px;
   color: #fff;
+}
+footer p{
+  color: #fff;
+  text-align: center;
+}
+footer{
+  height: 50px;
+  padding-top: 50px;
+  padding-bottom: 5px;
 }
