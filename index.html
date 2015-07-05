@@ -15,6 +15,7 @@
   <script src="//cdn.jsdelivr.net/headroomjs/0.7.0/angular.headroom.min.js"></script>
   <script src="//cdn.jsdelivr.net/headroomjs/0.7.0/jQuery.headroom.min.js"></script>
   <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
   <meta name="description" content="Dhron's personal home on the web!" />
@@ -33,20 +34,25 @@
 
 <body>
 
-  <div class="welcome">
-    <h1>ようこそ</h1>
+  <div class="welcome rumble-hover">
+
+      <h1 id="first" id="rumble">Dhron<h1>
+      <h2 id="last" id="rumble">Joshi<h2>
+      <!--<img id="rumble" src="dhron-logo-raw.png"></img>-->
+
   </div>
-  </div>
+
+</div>
   <div id="intro">
     <div class="container">
       <div class="main-idea">
         <div class="hello">
-          <p>Name's <u>Dhron</u>. </br></br>
+          <p>
+            </br>
 
-            I'm a student passionate about learning software development. I am currently working on a game called <u><i>Horizon Quest</i></u>;
-            follow the development blog<i><u><a href="http://www.dhron.ca/devblog">here</a></u></i>. I like playing the violin and learning Japanese.
-            I also like watching anime and Korean drama.
-            I love talking to people so don't hesitate to e-mail me or mention me on twitter! ;)
+            I will be studying mathematics @ the University of Waterloo this fall.</br></br> Some of my hobbies include playing the
+            violin and learning Japanese. I also like watching anime and Korean drama.
+            I love talking to humans so don't hesitate to e-mail me or mention me on twitter!
           </p>
         </div>
         </br>
@@ -83,7 +89,8 @@
       </div>
     </div>
   </div>
-
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+<script type="text/javascript" src="rumble/jquery.jrumble.1.3.js"></script>
 </body>
 <div class="container">
   <footer>
@@ -91,12 +98,18 @@
   </footer>
 </div>
 <script>
-// grab an element
-var myElement = document.querySelector("header");
-// construct an instance of Headroom, passing the element
-var headroom  = new Headroom(myElement);
-// initialise
-headroom.init();
+// Start rumble on element
+$('#rumble').hover(function(){
+	$(this).trigger('startRumble');
+}, function(){
+	$(this).trigger('stopRumble');
+});
+
+$('#rumble').jrumble({
+	x: 2,
+	y: 2,
+	rotation: 1
+});
 </script>
 
 </html>
