@@ -11,9 +11,6 @@
   <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
 
   <link rel="icon" type="image/x-icon" href="/favicon.ico" />
-  <script src="//cdn.jsdelivr.net/headroomjs/0.7.0/headroom.min.js"></script>
-  <script src="//cdn.jsdelivr.net/headroomjs/0.7.0/angular.headroom.min.js"></script>
-  <script src="//cdn.jsdelivr.net/headroomjs/0.7.0/jQuery.headroom.min.js"></script>
   <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
 
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -34,7 +31,7 @@
 
 <body>
 
-  <div class="welcome rumble-hover">
+  <div class="welcome rumble">
 
       <h1 id="first" id="rumble">Dhron<h1>
       <h2 id="last" id="rumble">Joshi<h2>
@@ -88,28 +85,14 @@
         </div>
       </div>
     </div>
+    <script type="text/javascript" src="script.js"></script>
   </div>
-  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
-<script type="text/javascript" src="rumble/jquery.jrumble.1.3.js"></script>
+
 </body>
 <div class="container">
   <footer>
     <p>stay awesome.<i class="fa fa-heart-o fa-1x"></i>dhron.</p>
   </footer>
 </div>
-<script>
-// Start rumble on element
-$('#rumble').hover(function(){
-	$(this).trigger('startRumble');
-}, function(){
-	$(this).trigger('stopRumble');
-});
-
-$('#rumble').jrumble({
-	x: 2,
-	y: 2,
-	rotation: 1
-});
-</script>
 
 </html>
